@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Legit Logo Layout</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ページ背景を透過 */
+    body {
+      background-color: transparent;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* 画面中央より少し下あたりに配置 */
+    .logo {
+      position: absolute;
+      left: 50%;
+      top: 60%;              /* 真ん中(50%)よりやや下に */
+      transform: translate(-50%, -50%);
+    }
+
+    /* 画像のアスペクト比を維持したまま縮小のみ */
+    .logo img {
+      max-width: 50vw;       /* 必要に応じて調整してください */
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <!-- 同じフォルダにあるロゴファイル -->
+      <img src="legitlogo.PNG" alt="CyberAgent legit logo">
+    </div>
+  </div>
+</body>
+</html>
